@@ -1,17 +1,27 @@
-import { useState } from 'react'
+import { ReactElement, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import axios from 'axios'
 
-function App() {
+function App(): ReactElement {
   const [count, setCount] = useState(0)
+  useEffect(() => {
+    axios
+      .get('https://192.168.5.11:8080/api/')
+      .then((res) => {
+        console.log(res)
+        setCount(res.data.hello)
+      })
+      .catch((err) => console.error(err))
+  }, [])
 
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
-        <a href="https://reactjs.org" target="_blank">
+        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
