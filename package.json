@@ -12,13 +12,26 @@
   },
   "dependencies": {
     "@types/node": "^18.7.13",
+    "antd": "^4.23.6",
     "axios": "^0.27.2",
+    "dayjs": "^1.11.6",
+    "dotenv": "^16.0.3",
+    "immer": "^9.0.16",
+    "lexical": "^0.5.0",
+    "nprogress": "^0.2.0",
+    "plyr": "^3.7.2",
+    "rc-footer": "^0.6.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite-plugin-compression": "^0.5.1"
+    "react-router-dom": "^6.4.2",
+    "resso": "^0.7.0",
+    "twemoji": "^14.0.2",
+    "use-immer": "^0.7.0",
+    "vite-plugin-compression": "^0.5.1",
+    "ws": "^8.9.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
+    "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",

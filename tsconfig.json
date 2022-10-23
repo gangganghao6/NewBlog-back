@@ -61,7 +61,8 @@
   },
   "files": [
     "*.ts",
-    "*.tsx"
+    "*.tsx",
+    "./.d.ts"
   ],
   "include": [
     "rootDir",

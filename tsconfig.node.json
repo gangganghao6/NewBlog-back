@@ -7,6 +7,9 @@
   },
   "include": [
     "vite.config.ts",
-    "localConfig.ts"
+    ".env"
+  ],
+  "files": [
+    "src/.d.ts"
   ]
 }
