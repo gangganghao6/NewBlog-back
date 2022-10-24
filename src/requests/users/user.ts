@@ -1,5 +1,9 @@
 import instance from '../request'
-
+export const RequestUserInfo = ({ id }: { id: string }): any => {
+  return async (): Promise<UserLoginReturn> => {
+    return await instance.get(`/users/user/${id}`)
+  }
+}
 export const RequestUserLogin = ({ email }: { email: string }): any => {
   return async (): Promise<UserLoginReturn> => {
     return await instance.post('/users/login', {
